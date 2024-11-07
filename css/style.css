@@ -1,0 +1,111 @@
+body {
+	background-color: lightgrey;
+}
+
+/* Стиль для поля с ошибкой */
+.input-error {
+    border: 2px solid red;
+}
+
+
+/* Явное оформление header */
+header {
+    font-family: fantasy, cursive;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: purple;
+    color: white;
+}
+
+/* Выровняем все элементы внутри формы по центру */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центровка всех элементов по горизонтали */
+    padding: 20px;
+}
+
+/* Центрирование элементов внутри контейнеров X и R */
+#x_container, #R_container, #y_container, #button_confirm, #button_drop_container {
+    display: flex;
+    justify-content: center; /* Центровка радиокнопок и кнопок R по горизонтали */
+    margin: 10px 0;
+}
+
+/* Оформление радиокнопок X */
+.x_value {
+    transform: scale(2);
+    margin: 13px;
+}
+
+/* Стиль для полей ввода Y */
+input[name="y_field"] {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Стиль для кнопок R */
+.R_value {
+    transform: scale(2);
+    margin: 13px;
+}
+
+/* Центрирование изображения */
+#img_container {
+    display: flex;
+    justify-content: center; /* Центровка картинки */
+    margin-top: 20px;
+}
+
+/* Центрирование таблицы с результатами */
+#table_for_results {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+#table_for_results th {
+    background-color: #87CEEB;
+    font-size: 18px;
+}
+
+#table_for_results td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Оформление кнопки подтверждения с псевдоэлементом */
+#button_confirm::after {
+    content: " ✔";
+    color: green;
+}
+
+/* Выровняем кнопки подтверждения и сброса по центру */
+#button_confirm, #button_drop {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+#pagination_controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#pagination_controls button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#pagination_controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

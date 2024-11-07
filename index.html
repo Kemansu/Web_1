@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ракетка</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Тамаев.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script src="js/script.js" async defer></script>
+    <header>Погосов Денис Артурович P3220 Вариант 409352</header>
+    
+    <form id="form">
+        <div id="x_container">
+            <label for="x_field">X:</label>
+            <input class="x_value" type="radio" name="x_field" value="-5"><label>-5</label>
+            <input class="x_value" type="radio" name="x_field" value="-4"><label>-4</label>
+            <input class="x_value" type="radio" name="x_field" value="-3"><label>-3</label>
+            <input class="x_value" type="radio" name="x_field" value="-2"><label>-2</label>
+            <input class="x_value" type="radio" name="x_field" value="-1"><label>-1</label>
+            <input class="x_value" type="radio" name="x_field" value="0"><label>0</label>
+            <input class="x_value" type="radio" name="x_field" value="1"><label>1</label>
+            <input class="x_value" type="radio" name="x_field" value="2"><label>2</label>
+            <input class="x_value" type="radio" name="x_field" value="3"><label>3</label>
+        </div>
+
+        <div id="y_container">
+            <label for="y_field">Y:</label>
+            <input id="y_Field" type="text" name="y_field" placeholder="Введите значение для Y" required="">
+        </div>
+
+        <div id="R_container">
+            <label for="R_field">R:</label>
+            <button id="buttonR1" class="R_value" type="button" onclick="changeColorForR('buttonR1')" name="R_field" value="1">1</button>
+            <button id="buttonR2" class="R_value" type="button" onclick="changeColorForR('buttonR2')" name="R_field" value="2">2</button>
+            <button id="buttonR3" class="R_value" type="button" onclick="changeColorForR('buttonR3')" name="R_field" value="3">3</button>
+            <button id="buttonR4" class="R_value" type="button" onclick="changeColorForR('buttonR4')" name="R_field" value="4">4</button>
+            <button id="buttonR5" class="R_value" type="button" onclick="changeColorForR('buttonR5')" name="R_field" value="5">5</button>
+        </div>
+
+        <div id="error_div"></div>
+
+        <div id="button_confirm_container">
+            <button id="button_confirm" type="submit">отправить</button>
+        </div>
+    </form>
+
+    <div id="button_drop_container">
+        <button id="button_drop" type="button">сброcить</button>
+    </div>
+
+    <div id="img_container">
+        <img src="img/areas_new.png" style="max-width: 25%; height: auto;">
+    </div>
+    
+    <br>
+
+    <table id="table_for_results">
+        <th width="16.6%">X</th>
+        <th width="16.6%">Y</th>
+        <th width="16.6%">R</th>
+        <th width="16.6%">результат</th>
+        <th width="16.6%">время выполнения</th>
+        <th width="16.6%">дата</th>
+    </table>
+
+    <div id="pagination_controls">
+        <button id="prev_page" disabled>Назад</button>
+        <span id="page_info">Страница 1</span>
+        <button id="next_page">Вперед</button>
+    </div>
+
+
+</body>
+
+</html>
